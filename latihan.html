@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Best YouTuber di Indonesia</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 80%; 
+            margin: 10px auto;
+            padding: 20px;
+            border: 2px solid black;
+        }
+
+        img {
+            width: 80%; 
+            height: auto;
+        }
+
+        /* Smartphone (≤600px) */
+        @media only screen and (max-width: 600px) {
+            body {
+                background-color: yellow;
+                font-size: 12px;
+                color: red;
+            }
+
+            .container {
+                max-width: 80%;
+            }
+        }
+
+        /* Tablet (601px - 1024px) */
+        @media only screen and (min-width: 601px) and (max-width: 1024px) {
+            body {
+                background-color: pink;
+                font-size: 16px;
+                color: gray;
+            }
+
+            .container {
+                max-width: 80%;
+            }
+        }
+
+        /* Desktop (>1024px) */
+        @media only screen and (min-width: 1025px) {
+            body {
+                background-color: gray;
+                font-size: 18px;
+                color: black;
+            }
+
+            img {
+                width: 100%;
+            }
+
+            .container {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>The Best YouTuber di Indonesia</h1>
+    
+    <div class="container">
+        <p>Container 1: Tara Arts: Dugong Japos</p>
+        <img src="img/taraarts.jpg" alt="Tara Arts: Dugong Japos">
+    </div>
+
+    <div class="container">
+        <p>Container 2: Dugong Terakhir Sebelum di Penangkaran Japos</p>
+        <img src="img/ikan-duyung-dugong-1.jpg" alt="Dugong Terakhir Sebelum di Penangkaran Japos">
+    </div>
+
+    <div class="container">
+        <p>Container 3: Wujud Asli Tara Arts Selain Dugong</p>
+        <img src="img/snorlax.jpg" alt="Wujud Asli Tara Arts Selain Dugong">
+    </div>
+
+</body>
+</html>

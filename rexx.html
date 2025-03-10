@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {
+                background-color: grey; 
+            }
+
+            @media only screen and (max-width: 600px) {
+                body {
+                    background-color: yellow;
+                }
+            }
+
+            @media only screen and (min-width: 601px) and (max-width: 1024px) {
+                body {
+                    background-color: pink;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <p>Resize the browser window. When the width of this document is 600 pixels or less, the background-color is "lightblue", otherwise it is "lightgreen".</p>
+        <ul>
+            <li><b>≤600px (Smartphone):</b> Kuning</li>
+            <li><b>601px - 1024px (Tablet):</b> Pink</li>
+            <li><b>>1024px (Desktop):</b> Abu-abu</li>
+        </ul>
+    </body>
+</html>
