@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                font-family: Arial, sans-serif;
+                text-align: center;
+            }
+
+            .flex-container {
+                display: flex; 
+                flex-direction: row; 
+                flex-wrap: wrap; 
+                justify-content: center; 
+                align-items: center; 
+                height: 100vh;
+            }
+
+            .flex-item-left, .flex-item-right {
+                padding: 20px;
+                flex: 50%; 
+                min-height: 100px; 
+            }
+
+            .flex-item-left {
+                background-color: #f1f1f1;
+            }
+
+            .flex-item-right {
+                background-color: dodgerblue;
+                color: white;
+            }
+
+            
+            @media (max-width: 800px) {
+                .flex-container {
+                    flex-direction: column; 
+                    justify-content: flex-start;
+                    height: auto;
+                }
+
+                .flex-item-left, .flex-item-right {
+                    flex: 100%; 
+                }
+            }
+        </style>
+    </head>
+    <body>
+
+        <h1>Responsive Flexbox</h1>
+
+        <p>The "flex-direction: row;" stacks the flex items horizontally (from left to right).</p>
+        <p>The "flex-direction: column;" stacks the flex items vertically (from top to bottom).</p>
+        <p><b>Resize the browser window to see that the direction changes when the 
+        screen size is 800px wide or smaller.</b></p>
+
+        <div class="flex-container">
+            <div class="flex-item-left">1</div>
+            <div class="flex-item-right">2</div>
+        </div>
+
+    </body>
+</html>
